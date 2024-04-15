@@ -1,0 +1,57 @@
+{
+    "bodyParts": ["chest", "back", "legs", "arms", "shoulders"],
+    "exercises": [
+      {
+        "id": "1",
+        "name": "Bench Press",
+        "target": "Chest",
+        "equipment": "Barbell",
+        "bodyPart": "chest",
+        "gifUrl": "https://example.com/benchpress.gif",
+        "description": "Lie back on a bench with a barbell."
+      },
+      {
+        "id": "2",
+        "name": "Squat",
+        "target": "Quadriceps",
+        "equipment": "None",
+        "bodyPart": "legs",
+        "gifUrl": "https://example.com/squat.gif",
+        "description": "Stand with feet and squat down."
+      }
+    ],
+    "exerciseDetails": {
+      "1": {
+        "id": "1",
+        "name": "Bench Press",
+        "videos": [
+          {
+            "videoUrl": "https://youtube.com/example_bench_press"
+          }
+        ],
+        "similarTargetMuscleExercises": [
+          {
+            "id": "3",
+            "name": "Chest Fly",
+            "target": "Chest",
+            "equipment": "Dumbbell",
+            "bodyPart": "chest",
+            "gifUrl": "https://example.com/chestfly.gif",
+            "description": "Lie on a bench and lift dumbbells outward."
+          }
+        ],
+        "similarEquipmentExercises": [
+          {
+            "id": "4",
+            "name": "Barbell Squat",
+            "target": "Legs",
+            "equipment": "Barbell",
+            "bodyPart": "legs",
+            "gifUrl": "https://example.com/barbellsquat.gif",
+            "description": "Stand with feet and squat with a barbell."
+          }
+        ]
+      }
+    }
+  }
+  
