@@ -1,7 +1,11 @@
 const express = require('express');
 const fs = require('fs');
+const dotenv = require('dotenv');
+
 const app = express();
-const port = 3000;
+dotenv.config({ path: "./config.env" });
+
+app.use(express.json());
 
 // Read the data.json file into memory
 const dataFilePath = './data.json'; // Ensure the path is correct relative to server.js
@@ -82,6 +86,7 @@ app.get('/api/exercises', (req, res) => {
 });
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on http://localhost:${process.env.PORT}`);
+    console.log(`Frontend: ${process.env.FRONTEND_URL}`);
 });
