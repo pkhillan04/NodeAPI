@@ -85,4 +85,8 @@ app.get('/api/exercises', (req, res) => {
     res.json(data);
 });
 
-
+// Start the server
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on http://localhost:${process.env.PORT}`);
+  console.log(`Frontend: ${process.env.FRONTEND_URL}`);
+});
